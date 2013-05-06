@@ -1,5 +1,6 @@
 .DS_Store
 .tar
+.tgz
 .out
 *.o
-
+a.out
