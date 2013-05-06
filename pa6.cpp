@@ -14,12 +14,14 @@
 
 int main(int argc, char const *argv[])
 {
+    std::cout << argc;
     std::cout << std::endl;
     pa6::greeting();
     std::cout << std::endl;
 
+
     // Error check and start editor
-    if (argc < 1)
+    if (argc < 2)
     {
         std::cerr << "Filename was not provided at runtime" << std::endl;
         return EXIT_FAILURE;
