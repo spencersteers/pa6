@@ -3,3 +3,14 @@
 // File:   pa6functions.h
 // Global function prototypes for pa6
 
+#ifndef __pa6__pa6functions__
+#define __pa6__pa6functions__
+
+#include <iostream>
+
+namespace pa6
+{
+    void greeting();
+};
+
+#endif

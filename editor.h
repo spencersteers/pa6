@@ -1,13 +1,13 @@
 // Author: Spencer Steers
 // Date:   05.05.2013
 // File:   editor.h
-// 
+// Decleration of text editor class
 
 
 #ifndef __pa6__editor__
 #define __pa6__editor__
 
-#include <list>
+#include <vector>
 #include <string>
 #include <sstream>
 #include <iostream>
@@ -36,7 +36,7 @@ private:
 
     bool enabled;
     std::string filename;
-    std::list<std::string> line_buffer;
+    std::vector<std::string> line_buffer;
 };
 
 #endif

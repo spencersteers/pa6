@@ -5,3 +5,8 @@
 
 #include "pa6functions.h"
 
+void pa6::greeting()
+{
+    std::cout << "This program is a line based text editor." << std::endl;
+    std::cout << "It takes in a filename at the command line for read/write." << std::endl;
+}
