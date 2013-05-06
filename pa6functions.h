@@ -10,6 +10,8 @@
 
 namespace pa6
 {
+    // Pre: None
+    // Post: Displays a greeting
     void greeting();
 };
 

@@ -18,14 +18,14 @@ int main(int argc, char const *argv[])
     pa6::greeting();
     std::cout << std::endl;
 
-    // Text Editor
+    // Error check and start editor
     if (argc < 1)
     {
         std::cerr << "Filename was not provided at runtime" << std::endl;
         return EXIT_FAILURE;
     }
-
     editor e(argv[1]);
     e.start_with_loop();
+
     return EXIT_SUCCESS;
 }

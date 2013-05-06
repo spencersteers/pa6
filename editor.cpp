@@ -20,9 +20,11 @@ void editor::handle_input()
 {
     std::string command, arg1, arg2, in;
     
+    // Get input string into a stringstream
     getline(std::cin, in);
     std::stringstream line(in);
 
+    // Parse into arguments
     int count = 0;
     while(std::getline(line, in, ' '))
     {
@@ -31,6 +33,7 @@ void editor::handle_input()
                 command = in;
                 break;
             case 1:
+                // After geting next string put the rest of line in arg2
                 arg1 = in;
                 getline(line, in);
                 arg2 = in;
@@ -38,6 +41,8 @@ void editor::handle_input()
         }
         ++count;
     }
+
+    // Execute input command
     if (command == "H")
     {
         help();
