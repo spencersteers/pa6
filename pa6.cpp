@@ -6,20 +6,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <sstream>
 #include "pa6functions.h"
+#include "editor.h"
 
 int main(int argc, char const *argv[])
 {
-    std::vector<std::string> v;
-    v.push_back("push_back");
-    v.insert(v.begin(), "Begin");
-    v.insert(v.begin() + 1, "5");
-
-    std::string s = argv[0];
-
-    for (std::vector<std::string>::iterator i = v.begin(); i != v.end(); ++i)
-    {
-        std::cout << *i << std::endl;
-    }
-    return 0;
+    editor e(argv[1]);
+    e.start_with_loop();
+    return 0;   
 }
